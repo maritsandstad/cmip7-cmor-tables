@@ -3832,5 +3832,6 @@
             "standard_name": "water_table_depth",
             "units": "m"
         }
+        # TODO: Add WIEMIP specific variables here
     }
 }
