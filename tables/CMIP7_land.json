@@ -3831,7 +3831,431 @@
             "positive": "",
             "standard_name": "water_table_depth",
             "units": "m"
+        },
+# TODO: Add WIEMIP specific variables here
+	"albedo_tavg-u-hxy-lnd": {
+            "cell_measures": "",
+            "cell_methods": "area: mean where land time: mean",
+            "comment": "",
+            "dimensions": [
+                "longitude",
+                "latitude",
+                "time"
+            ],
+            "long_name": "Gridcell Broadband albedo",
+            "modeling_realm": "land",
+            "out_name": "albedo",
+            "positive": "",
+            "standard_name": "gridcell_broadband_albedo",
+            "units": "W m-2"
         }
-        # TODO: Add WIEMIP specific variables here
+	"cWood_tavg-u-hxy-lnd": {
+            "cell_measures": "",
+            "cell_methods": "area: mean where land time: mean",
+            "comment": "",
+            "dimensions": [
+                "longitude",
+                "latitude",
+                "time"
+            ],
+            "long_name": "Carbon in Wood",
+            "modeling_realm": "land",
+            "out_name": "cWood",
+            "positive": "",
+            "standard_name": "carbon_in_wood",
+            "units": "kg C m-2"
+        }
+	"cCwd_tavg-u-hxy-lnd": {
+            "cell_measures": "",
+            "cell_methods": "area: mean where land time: mean",
+            "comment": "",
+            "dimensions": [
+                "longitude",
+                "latitude",
+                "time"
+            ],
+            "long_name": "Carbon in Coarse Woody Debris",
+            "modeling_realm": "land",
+            "out_name": "cCwd",
+            "positive": "",
+            "standard_name": "carbon_in_coarse_woody_debris",
+            "units": "kg C m-2"
+        }
+	"soilR_tavg-u-hxy-lnd": {
+            "cell_measures": "",
+            "cell_methods": "area: mean where land time: mean",
+            "comment": "",
+            "dimensions": [
+                "longitude",
+                "latitude",
+                "time"
+            ],
+            "long_name": "Soil Respiration",
+            "modeling_realm": "land",
+            "out_name": "soilR",
+            "positive": "",
+            "standard_name": "soil_respiration",
+            "units": "kg C m-2 s-1"
+        }
+	"fLeafLitter_tavg-u-hxy-lnd": {
+            "cell_measures": "",
+            "cell_methods": "area: mean where land time: mean",
+            "comment": "",
+            "dimensions": [
+                "longitude",
+                "latitude",
+                "time"
+            ],
+            "long_name": "Carbon Flux from Leaves to Litter",
+            "modeling_realm": "land",
+            "out_name": "fLeafLitter",
+            "positive": "",
+            "standard_name": "carbon_flux_from_leaves_to_litter",
+            "units": "kg C m-2 s-1"
+        }
+	"fWoodLitter_tavg-u-hxy-lnd": {
+            "cell_measures": "",
+            "cell_methods": "area: mean where land time: mean",
+            "comment": "",
+            "dimensions": [
+                "longitude",
+                "latitude",
+                "time"
+            ],
+            "long_name": "Carbon Flux from Wood to Litter",
+            "modeling_realm": "land",
+            "out_name": "fWoodLitter",
+            "positive": "",
+            "standard_name": "carbon_flux_from_wood_to_litter",
+            "units": "kg C m-2 s-1"
+        }
+	"fRootLitter_tavg-u-hxy-lnd": {
+            "cell_measures": "",
+            "cell_methods": "area: mean where land time: mean",
+            "comment": "",
+            "dimensions": [
+                "longitude",
+                "latitude",
+                "time"
+            ],
+            "long_name": "Carbon Flux from Roots to Litter",
+            "modeling_realm": "land",
+            "out_name": "fRootLitter",
+            "positive": "",
+            "standard_name": "carbon_flux_from_roots_to_litter",
+            "units": "kg C m-2 s-1"
+        }
+	"fAllocLeafVgt_tavg-u-hxy-multi": {
+            "cell_measures": "",
+            "cell_methods": "area: mean where land time: mean",
+            "comment": "",
+            "dimensions": [
+                "longitude",
+                "latitude",
+		"pft",
+                "time"
+            ],
+            "long_name": "Vegtype NPP allocation to leaves",
+            "modeling_realm": "land",
+            "out_name": "fAllocLeaf",
+            "positive": "",
+            "standard_name": "vegtype_npp_allocation_to_leaves",
+            "units": "kg C m-2 s-1"
+        }
+	"fAllocWoodVgt_tavg-u-hxy-multi": {
+            "cell_measures": "",
+            "cell_methods": "area: mean where land time: mean",
+            "comment": "",
+            "dimensions": [
+                "longitude",
+                "latitude",
+		"pft",
+                "time"
+            ],
+            "long_name": "Vegtype NPP allocation to Wood",
+            "modeling_realm": "land",
+            "out_name": "fAllocWood",
+            "positive": "",
+            "standard_name": "vegtype_npp_allocation_to_wood",
+            "units": "kg C m-2"
+        }
+	"fAllocRootVgt_tavg-u-hxy-multi": {
+            "cell_measures": "",
+            "cell_methods": "area: mean where land time: mean",
+            "comment": "",
+            "dimensions": [
+                "longitude",
+                "latitude",
+		"pft",
+                "time"
+            ],
+            "long_name": "Vegtype NPP allocation to Root",
+            "modeling_realm": "land",
+            "out_name": "fAllocRoot",
+            "positive": "",
+            "standard_name": "vegtype_npp_allocation_to_root",
+            "units": "kg C m-2"
+        }
+	"fFirecVeg_tavg-u-hxy-lnd": {
+            "cell_measures": "",
+            "cell_methods": "area: mean where land time: mean",
+            "comment": "",
+            "dimensions": [
+                "longitude",
+                "latitude",
+                "time"
+            ],
+            "long_name": "CO2 Emission from Cveg due to Fire",
+            "modeling_realm": "land",
+            "out_name": "fFireCveg",
+            "positive": "",
+            "standard_name": "CO2_emission_from_cveg_due_to_fire",
+            "units": "kg C m-2 s-1"
+        }
+	"nOrgSoil_tavg-hxy-lnd": {
+            "cell_measures": "",
+            "cell_methods": "area: mean where land time: mean",
+            "comment": "",
+            "dimensions": [
+                "longitude",
+                "latitude",
+                "time"
+            ],
+            "long_name": "Nitrogen Organic in Soil (including below-ground litter)",
+            "modeling_realm": "land",
+            "out_name": "nOrgSoil",
+            "positive": "",
+            "standard_name": "N_organic_in_soil",
+            "units": "kg N m-2"
+        }
+	"ch4_tavg-u-hxy-lnd": {
+            "cell_measures": "",
+            "cell_methods": "area: mean where land time: mean",
+            "comment": "",
+            "dimensions": [
+                "longitude",
+                "latitude",
+                "time"
+            ],
+            "long_name": "Total methane flux",
+            "modeling_realm": "land",
+            "out_name": "ch4",
+            "positive": "",
+            "standard_name": "total_methane_flux",
+            "units": "kg CH4 m-2 s-1"
+        }
+	"isopr_tavg-u-hxy-lnd": {
+            "cell_measures": "",
+            "cell_methods": "area: mean where land time: mean",
+            "comment": "",
+            "dimensions": [
+                "longitude",
+                "latitude",
+                "time"
+            ],
+            "long_name": "Emission flux of isoprene",
+            "modeling_realm": "land",
+            "out_name": "isopr",
+            "positive": "",
+            "standard_name": "emission_flux_of_isoprene",
+            "units": "kg m-2 s-1"
+        }
+	"methanol_tavg-u-hxy-lnd": {
+            "cell_measures": "",
+            "cell_methods": "area: mean where land time: mean",
+            "comment": "",
+            "dimensions": [
+                "longitude",
+                "latitude",
+                "time"
+            ],
+            "long_name": "Emission flux of methanol",
+            "modeling_realm": "land",
+            "out_name": "methanol",
+            "positive": "",
+            "standard_name": "emission_flux_of_methanol",
+            "units": "kg m-2 s-1"
+        }
+	"acetone_tavg-u-hxy-lnd": {
+            "cell_measures": "",
+            "cell_methods": "area: mean where land time: mean",
+            "comment": "",
+            "dimensions": [
+                "longitude",
+                "latitude",
+                "time"
+            ],
+            "long_name": "Emission flux of acetone",
+            "modeling_realm": "land",
+            "out_name": "acetone",
+            "positive": "",
+            "standard_name": "emission_flux_of_acetone",
+            "units": "kg m-2 s-1"
+        }
+	"fireIntensity_tavg-u-hxy-lnd": {
+            "cell_measures": "",
+            "cell_methods": "area: mean where land time: mean",
+            "comment": "",
+            "dimensions": [
+                "longitude",
+                "latitude",
+                "time"
+            ],
+            "long_name": "Weighted Mean Fireline Intensity",
+            "modeling_realm": "land",
+            "out_name": "fireintsTotal",
+            "positive": "",
+            "standard_name": "weighted_mean_fireline_intensity",
+            "units": "kW m-1"
+        }
+	"cFuelClass_tavg-u-hxy-multi": {
+            "cell_measures": "",
+            "cell_methods": "area: mean where land time: mean",
+            "comment": "",
+            "dimensions": [
+                "longitude",
+                "latitude",
+		"fuelclass",
+                "time"
+            ],
+            "long_name": "Carbon in Different Fuel Classes",
+            "modeling_realm": "land",
+            "out_name": "cfuelTotal",
+            "positive": "",
+            "standard_name": "carbon_in_different_fuel_classes",
+            "units": "kg C m-2"
+        }
+	"fuelMoistureFuelClass_tavg-u-hxy-multi": {
+            "cell_measures": "",
+            "cell_methods": "area: mean where land time: mean",
+            "comment": "",
+            "dimensions": [
+                "longitude",
+                "latitude",
+		"fuelclass",
+                "time"
+            ],
+            "long_name": "Fuel Moisture for Different Fuel Classes",
+            "modeling_realm": "land",
+            "out_name": "mfuelTotal",
+            "positive": "",
+            "standard_name": "fuel_moisture_for_different_fuel_classes",
+            "units": ""
+        }
+	"fireNumber_tavg-u-hxy-lnd": {
+            "cell_measures": "",
+            "cell_methods": "area: mean where land time: mean",
+            "comment": "",
+            "dimensions": [
+                "longitude",
+                "latitutude",
+                "time"
+            ],
+            "long_name": "Mean Number of Fires",
+            "modeling_realm": "land",
+            "out_name": "firenrTotal",
+            "positive": "",
+            "standard_name": "mean_number_of_fires",
+            "units": "n km-2 day-1"
+        }
+	"fireMortality_tavg-u-hxy-lnd": {
+            "cell_measures": "",
+            "cell_methods": "area: mean where land time: mean",
+            "comment": "",
+            "dimensions": [
+                "longitude",
+                "latitutude",
+                "time"
+            ],
+            "long_name": "Tree Mortality Caused by Fire",
+            "modeling_realm": "land",
+            "out_name": "firemortalityTotal",
+            "positive": "",
+            "standard_name": "tree_mortality_caused_by_fire",
+            "units": "%"
+        }
+	"fireSize_tavg-u-hxy-lnd": {
+            "cell_measures": "",
+            "cell_methods": "area: mean where land time: mean",
+            "comment": "",
+            "dimensions": [
+                "longitude",
+                "latitutude",
+                "time"
+            ],
+            "long_name": "Weighted Mean Fire Size",
+            "modeling_realm": "land",
+            "out_name": "firesizeTotal",
+            "positive": "",
+            "standard_name": "weighted_mean_fire_size",
+            "units": "km2"
+        }
+	"fireRos_tavg-u-hxy-lnd": {
+            "cell_measures": "",
+            "cell_methods": "area: mean where land time: mean",
+            "comment": "",
+            "dimensions": [
+                "longitude",
+                "latitutude",
+                "time"
+            ],
+            "long_name": "Weighted Mean Fire Rate of Spread",
+            "modeling_realm": "land",
+            "out_name": "fireosTotal",
+            "positive": "",
+            "standard_name": "weighted_mean_fire_rate_of_spread",
+            "units": "km2"
+        }
+	"docFlux_tavg-u-hxy-lnd": {
+            "cell_measures": "",
+            "cell_methods": "area: mean where land time: mean",
+            "comment": "",
+            "dimensions": [
+                "longitude",
+                "latitutude",
+                "time"
+            ],
+            "long_name": "Dissolved organic carbon flux",
+            "modeling_realm": "land",
+            "out_name": "docFlux",
+            "positive": "",
+            "standard_name": "dissolved_organic_carbon_flux",
+            "units": "kg C m-2 s-1"
+        }
+	"cSoilPoolsVr_tavg-sl-hxy-lnd": {
+            "cell_measures": "",
+            "cell_methods": "area: mean where land time: mean",
+            "comment": "",
+            "dimensions": [
+                "longitude",
+                "latitutude",
+                "time"
+            ],
+            "long_name": "Vertically resolved soil carbon pool sizes",
+            "modeling_realm": "land",
+            "out_name": "cPoolVr",
+            "positive": "",
+            "standard_name": "vertically_resolved_soil_carbon_pool_sizes",
+            "units": "kg C m-2"
+        }
+	"snowDepth_tavg-u-hxy-lnd": {
+            "cell_measures": "",
+            "cell_methods": "area: mean where land time: mean",
+            "comment": "",
+            "dimensions": [
+                "longitude",
+                "latitutude",
+                "time"
+            ],
+            "long_name": "Total snow depth",
+            "modeling_realm": "land",
+            "out_name": "snowDepth",
+            "positive": "",
+            "standard_name": "total_snow_depth",
+            "units": "m"
+        }
+	
+
+	
     }
 }
