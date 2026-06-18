@@ -3951,7 +3951,7 @@
             "dimensions": [
                 "longitude",
                 "latitude",
-		"pft",
+		"vegtype",
                 "time"
             ],
             "long_name": "Vegtype NPP allocation to leaves",
@@ -3968,7 +3968,7 @@
             "dimensions": [
                 "longitude",
                 "latitude",
-		"pft",
+		"vegtype",
                 "time"
             ],
             "long_name": "Vegtype NPP allocation to Wood",
@@ -3985,7 +3985,7 @@
             "dimensions": [
                 "longitude",
                 "latitude",
-		"pft",
+		"vegtype",
                 "time"
             ],
             "long_name": "Vegtype NPP allocation to Root",
