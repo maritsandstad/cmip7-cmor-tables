@@ -4147,7 +4147,7 @@
             "comment": "",
             "dimensions": [
                 "longitude",
-                "latitutude",
+                "latitude",
                 "time"
             ],
             "long_name": "Mean Number of Fires",
@@ -4163,7 +4163,7 @@
             "comment": "",
             "dimensions": [
                 "longitude",
-                "latitutude",
+                "latitude",
                 "time"
             ],
             "long_name": "Tree Mortality Caused by Fire",
@@ -4179,7 +4179,7 @@
             "comment": "",
             "dimensions": [
                 "longitude",
-                "latitutude",
+                "latitude",
                 "time"
             ],
             "long_name": "Weighted Mean Fire Size",
@@ -4195,7 +4195,7 @@
             "comment": "",
             "dimensions": [
                 "longitude",
-                "latitutude",
+                "latitude",
                 "time"
             ],
             "long_name": "Weighted Mean Fire Rate of Spread",
@@ -4211,7 +4211,7 @@
             "comment": "",
             "dimensions": [
                 "longitude",
-                "latitutude",
+                "latitude",
                 "time"
             ],
             "long_name": "Dissolved organic carbon flux",
@@ -4227,7 +4227,7 @@
             "comment": "",
             "dimensions": [
                 "longitude",
-                "latitutude",
+                "latitude",
                 "time"
             ],
             "long_name": "Vertically resolved soil carbon pool sizes",
@@ -4243,7 +4243,7 @@
             "comment": "",
             "dimensions": [
                 "longitude",
-                "latitutude",
+                "latitude",
                 "time"
             ],
             "long_name": "Total snow depth",
