@@ -1640,7 +1640,7 @@
             "dimensions": [
                 "longitude",
                 "latitude",
-                "vegtype",
+                "pft",
                 "time"
             ],
             "long_name": "Gross Primary Production on Vegetation type as Carbon Mass Flux [kgC m-2 s-1]",
@@ -1952,7 +1952,7 @@
             "dimensions": [
                 "longitude",
                 "latitude",
-                "vegtype",
+                "pft",
                 "time"
             ],
             "long_name": "Leaf Area Index on Vegetation type",
@@ -1985,7 +1985,7 @@
             "dimensions": [
                 "longitude",
                 "latitude",
-                "vegtype",
+                "pft",
                 "time"
             ],
             "long_name": "Percentage of Area by Vegetation or Land-Cover Category",
@@ -2635,7 +2635,7 @@
             "dimensions": [
                 "longitude",
                 "latitude",
-                "vegtype",
+                "pft",
                 "time"
             ],
             "long_name": "Net Primary Production on Vegetation type as Carbon Mass Flux [kgC m-2 s-1]",
@@ -2911,7 +2911,7 @@
             "dimensions": [
                 "longitude",
                 "latitude",
-                "vegtype",
+                "pft",
                 "time"
             ],
             "long_name": "Autotrophic Respiration on Vegetation type as Carbon Mass Flux [kgC m-2 s-1]",
@@ -3090,7 +3090,7 @@
             "dimensions": [
                 "longitude",
                 "latitude",
-                "vegtype",
+                "pft",
                 "time"
             ],
             "long_name": "Heterotrophic Respiration on Vegetation type as Carbon Mass Flux [kgC m-2 s-1]",
