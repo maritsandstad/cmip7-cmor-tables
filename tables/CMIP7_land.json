@@ -4234,7 +4234,7 @@
             "out_name": "fireosTotal",
             "positive": "",
             "standard_name": "weighted_mean_fire_rate_of_spread",
-            "units": "km2"
+            "units": "m s-1"
         },
 	"docFlux_tavg-u-hxy-lnd": {
             "cell_measures": "",
@@ -4396,6 +4396,102 @@
             "out_name": "soilRh",
             "positive": "",
             "standard_name": "soil_layer_respiration",
+            "units": "kg m-2 s-1"
+        },
+	"qsb_tavg-hxy-lnd": {
+            "cell_measures": "",
+            "cell_methods": "area: mean where land time: mean",
+            "comment": "",
+            "dimensions": [
+                "longitude",
+                "latitude",
+                "time"
+            ],
+            "long_name": "Subsurface runoff",
+            "modeling_realm": "land",
+            "out_name": "qsb",
+            "positive": "",
+            "standard_name": "subsurface_runoff",
+            "units": "kg m-2 s-1"
+        },
+	"hflsSens_tavg-u-hxy-lnd": {
+            "cell_measures": "",
+            "cell_methods": "area: mean where land time: mean",
+            "comment": "",
+            "dimensions": [
+                "longitude",
+                "latitude",
+                "time"
+            ],
+            "long_name": "Sensible heat flux",
+            "modeling_realm": "land",
+            "out_name": "qh",
+            "positive": "",
+            "standard_name": "Sensible_heat_flux",
+            "units": "W m-2"
+        },
+	"freezeDepth_tavg-u-hxy-lnd": {
+            "cell_measures": "",
+            "cell_methods": "area: mean where land time: mean",
+            "comment": "",
+            "dimensions": [
+                "longitude",
+                "latitude",
+                "time"
+            ],
+            "long_name": "Frozen layer thickness",
+            "modeling_realm": "land",
+            "out_name": "fdepth",
+            "positive": "",
+            "standard_name": "frozen_layer_thickness",
+            "units": "m"
+        },
+	"fNnitri_tavg-u-hxy-lnd": {
+            "cell_measures": "",
+            "cell_methods": "area: mean where land time: mean",
+            "comment": "",
+            "dimensions": [
+                "longitude",
+                "latitude",
+                "time"
+            ],
+            "long_name": "Nitrification rate",
+            "modeling_realm": "land",
+            "out_name": "fNnitri",
+            "positive": "",
+            "standard_name": "nitrification_rate",
+            "units": "kg m-2 s-1"
+        },
+	"fNnitri_tavg-u-hxy-lnd": {
+            "cell_measures": "",
+            "cell_methods": "area: mean where land time: mean",
+            "comment": "",
+            "dimensions": [
+                "longitude",
+                "latitude",
+                "time"
+            ],
+            "long_name": "Denitrification rate",
+            "modeling_realm": "land",
+            "out_name": "fNdenitri",
+            "positive": "",
+            "standard_name": "denitrification_rate",
+            "units": "kg m-2 s-1"
+        },
+	"fCH4Soil_tavg-u-hxy-lnd": {
+            "cell_measures": "",
+            "cell_methods": "area: mean where land time: mean",
+            "comment": "",
+            "dimensions": [
+                "longitude",
+                "latitude",
+                "time"
+            ],
+            "long_name": "Soil methane flux (net emission)",
+            "modeling_realm": "land",
+            "out_name": "fch4soil",
+            "positive": "",
+            "standard_name": "soil_methane_flux",
             "units": "kg m-2 s-1"
         }
 	
