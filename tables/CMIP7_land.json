@@ -3821,8 +3821,7 @@
             "dimensions": [
                 "longitude",
                 "latitude",
-                "time",
-                "typewetla"
+                "time"
             ],
             "long_name": "Wetland Percentage Cover",
             "modeling_realm": "land",
@@ -4285,7 +4284,7 @@
             "standard_name": "total_snow_depth",
             "units": "m"
         },
-	"alt_tavg-u-hxy-land": {
+	"alt_tavg-u-hxy-lnd": {
             "cell_measures": "",
             "cell_methods": "area: mean where land time: mean",
             "comment": "",
@@ -4300,6 +4299,104 @@
             "positive": "",
             "standard_name": "active_layer_thickness",
             "units": "m"
+        },
+	"rsn_tavg-u-hxy-lnd": {
+            "cell_measures": "",
+            "cell_methods": "area: mean where land time: mean",
+            "comment": "",
+            "dimensions": [
+                "longitude",
+                "latitude",
+                "time"
+            ],
+            "long_name": "Net shortwave radiation",
+            "modeling_realm": "land",
+            "out_name": "swnet",
+            "positive": "",
+            "standard_name": "net_shortwave_radiation",
+            "units": "W m-2"
+        },
+	"rln_tavg-u-hxy-lnd": {
+            "cell_measures": "",
+            "cell_methods": "area: mean where land time: mean",
+            "comment": "",
+            "dimensions": [
+                "longitude",
+                "latitude",
+                "time"
+            ],
+            "long_name": "Net longwave radiation",
+            "modeling_realm": "land",
+            "out_name": "lwnet",
+            "positive": "",
+            "standard_name": "net_longwave_radiation",
+            "units": "W m-2"
+        },
+	"tCanopy_tavg-u-hxy-lnd": {
+            "cell_measures": "",
+            "cell_methods": "area: mean where land time: mean",
+            "comment": "",
+            "dimensions": [
+                "longitude",
+                "latitude",
+                "time"
+            ],
+            "long_name": "Canopy temperature",
+            "modeling_realm": "land",
+            "out_name": "tcan",
+            "positive": "",
+            "standard_name": "canopy_temperature",
+            "units": "K"
+        },
+	"swe_tavg-u-hxy-lnd": {
+            "cell_measures": "",
+            "cell_methods": "area: mean where land time: mean",
+            "comment": "",
+            "dimensions": [
+                "longitude",
+                "latitude",
+                "time"
+            ],
+            "long_name": "Snow water equivalent",
+            "modeling_realm": "land",
+            "out_name": "swe",
+            "positive": "",
+            "standard_name": "snow_water_equivalent",
+            "units": "kg m-2"
+        },
+	"soilIce_tavg-sl-hxy-lnd": {
+            "cell_measures": "",
+            "cell_methods": "area: mean where land time: mean",
+            "comment": "",
+            "dimensions": [
+                "longitude",
+                "latitude",
+		"sdepth",
+                "time"
+            ],
+            "long_name": "Soil layer ice content",
+            "modeling_realm": "land",
+            "out_name": "soilIce",
+            "positive": "",
+            "standard_name": "soil_layer_ice_content",
+            "units": "kg m-2"
+        },
+	"rhSoilVr_tavg-sl-hxy-lnd": {
+            "cell_measures": "",
+            "cell_methods": "area: mean where land time: mean",
+            "comment": "",
+            "dimensions": [
+                "longitude",
+                "latitude",
+		"sdepth",
+                "time"
+            ],
+            "long_name": "Vertically resolved soil respiration",
+            "modeling_realm": "land",
+            "out_name": "soilRh",
+            "positive": "",
+            "standard_name": "soil_layer_respiration",
+            "units": "kg m-2 s-1"
         }
 	
 
