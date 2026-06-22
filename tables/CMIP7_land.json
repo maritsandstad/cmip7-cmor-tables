@@ -495,14 +495,29 @@
             "dimensions": [
                 "longitude",
                 "latitude",
-                "time",
-                "sdepth100cm"
+                "time"
             ],
             "long_name": "Carbon Mass in Soil Pool Above 1m Depth",
             "modeling_realm": "land",
-            "out_name": "cSoil",
+            "out_name": "cSoilAbove1m",
             "positive": "",
-            "standard_name": "carbon_mass_content_of_soil_layer",
+            "standard_name": "Carbon in Soil above 1m",
+            "units": "kg m-2"
+        },
+	"cSoilBelow1m_tavg-hxy-lnd": {
+            "cell_measures": "",
+            "cell_methods": "area: mean where land time: mean",
+            "comment": "",
+            "dimensions": [
+                "longitude",
+                "latitude",
+                "time"
+            ],
+            "long_name": "Carbon Mass in Soil Pool Below 1m Depth",
+            "modeling_realm": "land",
+            "out_name": "cSoilBelow1m",
+            "positive": "",
+            "standard_name": "Carbon in Soil below 1m",
             "units": "kg m-2"
         },
         "cSoil_tavg-sl-hxy-lnd": {
@@ -517,7 +532,7 @@
             ],
             "long_name": "Carbon Mass in Each Model Soil Level (Summed over All Soil Carbon Pools in That Level)",
             "modeling_realm": "land",
-            "out_name": "cSoil",
+            "out_name": "cSoilLayers",
             "positive": "",
             "standard_name": "carbon_mass_content_of_soil_layer",
             "units": "kg m-2"
@@ -531,7 +546,7 @@
                 "latitude",
                 "time"
             ],
-            "long_name": "Carbon Mass in Model Soil Pool",
+            "long_name": "Carbon in Soil (including below-ground litter)",
             "modeling_realm": "land",
             "out_name": "cSoil",
             "positive": "",
@@ -3848,6 +3863,23 @@
             "standard_name": "gridcell_broadband_albedo",
             "units": "W m-2"
         },
+	"albedoVgt_tavg-u-hxy-multi": {
+            "cell_measures": "",
+            "cell_methods": "area: time: mean where sector",
+            "comment": "",
+            "dimensions": [
+                "longitude",
+                "latitude",
+		"pft",
+                "time"
+            ],
+            "long_name": "Gridcell Broadband albedo",
+            "modeling_realm": "land",
+            "out_name": "albedo",
+            "positive": "",
+            "standard_name": "gridcell_broadband_albedo",
+            "units": "W m-2"
+        },
 	"cWood_tavg-u-hxy-lnd": {
             "cell_measures": "",
             "cell_methods": "area: mean where land time: mean",
@@ -3862,7 +3894,7 @@
             "out_name": "cWood",
             "positive": "",
             "standard_name": "carbon_in_wood",
-            "units": "kg C m-2"
+            "units": "kg m-2"
         },
 	"cCwd_tavg-u-hxy-lnd": {
             "cell_measures": "",
@@ -3878,7 +3910,7 @@
             "out_name": "cCwd",
             "positive": "",
             "standard_name": "carbon_in_coarse_woody_debris",
-            "units": "kg C m-2"
+            "units": "kg m-2"
         },
 	"soilR_tavg-u-hxy-lnd": {
             "cell_measures": "",
@@ -3894,7 +3926,7 @@
             "out_name": "soilR",
             "positive": "",
             "standard_name": "soil_respiration",
-            "units": "kg C m-2 s-1"
+            "units": "kg m-2 s-1"
         },
 	"fLeafLitter_tavg-u-hxy-lnd": {
             "cell_measures": "",
@@ -3910,7 +3942,7 @@
             "out_name": "fLeafLitter",
             "positive": "",
             "standard_name": "carbon_flux_from_leaves_to_litter",
-            "units": "kg C m-2 s-1"
+            "units": "kg m-2 s-1"
         },
 	"fWoodLitter_tavg-u-hxy-lnd": {
             "cell_measures": "",
@@ -3926,7 +3958,7 @@
             "out_name": "fWoodLitter",
             "positive": "",
             "standard_name": "carbon_flux_from_wood_to_litter",
-            "units": "kg C m-2 s-1"
+            "units": "kg m-2 s-1"
         },
 	"fRootLitter_tavg-u-hxy-lnd": {
             "cell_measures": "",
@@ -3942,11 +3974,11 @@
             "out_name": "fRootLitter",
             "positive": "",
             "standard_name": "carbon_flux_from_roots_to_litter",
-            "units": "kg C m-2 s-1"
+            "units": "kg m-2 s-1"
         },
 	"fAllocLeafVgt_tavg-u-hxy-multi": {
             "cell_measures": "",
-            "cell_methods": "area: mean where land time: mean",
+            "cell_methods": "area: time: mean where sector",
             "comment": "",
             "dimensions": [
                 "longitude",
@@ -3959,11 +3991,11 @@
             "out_name": "fAllocLeaf",
             "positive": "",
             "standard_name": "vegtype_npp_allocation_to_leaves",
-            "units": "kg C m-2 s-1"
+            "units": "kg m-2 s-1"
         },
 	"fAllocWoodVgt_tavg-u-hxy-multi": {
             "cell_measures": "",
-            "cell_methods": "area: mean where land time: mean",
+            "cell_methods": "area: time: mean where sector",
             "comment": "",
             "dimensions": [
                 "longitude",
@@ -3976,11 +4008,11 @@
             "out_name": "fAllocWood",
             "positive": "",
             "standard_name": "vegtype_npp_allocation_to_wood",
-            "units": "kg C m-2"
+            "units": "kg m-2"
         },
 	"fAllocRootVgt_tavg-u-hxy-multi": {
             "cell_measures": "",
-            "cell_methods": "area: mean where land time: mean",
+            "cell_methods": "area: time: mean where sector",
             "comment": "",
             "dimensions": [
                 "longitude",
@@ -3993,7 +4025,7 @@
             "out_name": "fAllocRoot",
             "positive": "",
             "standard_name": "vegtype_npp_allocation_to_root",
-            "units": "kg C m-2"
+            "units": "kg m-2"
         },
 	"fFirecVeg_tavg-u-hxy-lnd": {
             "cell_measures": "",
@@ -4009,7 +4041,7 @@
             "out_name": "fFireCveg",
             "positive": "",
             "standard_name": "CO2_emission_from_cveg_due_to_fire",
-            "units": "kg C m-2 s-1"
+            "units": "kg m-2 s-1"
         },
 	"nOrgSoil_tavg-hxy-lnd": {
             "cell_measures": "",
@@ -4025,7 +4057,7 @@
             "out_name": "nOrgSoil",
             "positive": "",
             "standard_name": "N_organic_in_soil",
-            "units": "kg N m-2"
+            "units": "kg m-2"
         },
 	"ch4_tavg-u-hxy-lnd": {
             "cell_measures": "",
@@ -4041,7 +4073,7 @@
             "out_name": "ch4",
             "positive": "",
             "standard_name": "total_methane_flux",
-            "units": "kg CH4 m-2 s-1"
+            "units": "kg m-2 s-1"
         },
 	"isopr_tavg-u-hxy-lnd": {
             "cell_measures": "",
@@ -4122,7 +4154,7 @@
             "out_name": "cfuelTotal",
             "positive": "",
             "standard_name": "carbon_in_different_fuel_classes",
-            "units": "kg C m-2"
+            "units": "kg m-2"
         },
 	"fuelMoistureFuelClass_tavg-u-hxy-multi": {
             "cell_measures": "",
@@ -4219,7 +4251,7 @@
             "out_name": "docFlux",
             "positive": "",
             "standard_name": "dissolved_organic_carbon_flux",
-            "units": "kg C m-2 s-1"
+            "units": "kg m-2 s-1"
         },
 	"cSoilPoolsVr_tavg-sl-hxy-lnd": {
             "cell_measures": "",
@@ -4235,7 +4267,7 @@
             "out_name": "cPoolVr",
             "positive": "",
             "standard_name": "vertically_resolved_soil_carbon_pool_sizes",
-            "units": "kg C m-2"
+            "units": "kg m-2"
         },
 	"snowDepth_tavg-u-hxy-lnd": {
             "cell_measures": "",
@@ -4251,6 +4283,22 @@
             "out_name": "snowDepth",
             "positive": "",
             "standard_name": "total_snow_depth",
+            "units": "m"
+        },
+	"alt_tavg-u-hxy-land": {
+            "cell_measures": "",
+            "cell_methods": "area: mean where land time: mean",
+            "comment": "",
+            "dimensions": [
+                "longitude",
+                "latitude",
+                "time"
+            ],
+            "long_name": "Active layer thickness",
+            "modeling_realm": "land",
+            "out_name": "ALT",
+            "positive": "",
+            "standard_name": "active_layer_thickness",
             "units": "m"
         }
 	
