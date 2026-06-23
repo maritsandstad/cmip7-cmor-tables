@@ -4007,7 +4007,7 @@
             "out_name": "fAllocWood",
             "positive": "",
             "standard_name": "vegtype_npp_allocation_to_wood",
-            "units": "kg m-2"
+            "units": "kg m-2 s-1"
         },
 	"fAllocRootVgt_tavg-u-hxy-multi": {
             "cell_measures": "",
@@ -4024,7 +4024,7 @@
             "out_name": "fAllocRoot",
             "positive": "",
             "standard_name": "vegtype_npp_allocation_to_root",
-            "units": "kg m-2"
+            "units": "kg m-2 s-1"
         },
 	"fFirecVeg_tavg-u-hxy-lnd": {
             "cell_measures": "",
@@ -4510,6 +4510,54 @@
             "positive": "",
             "standard_name": "vegtype level carbon in vegetation",
             "units": "kg m-2"
+        },
+	"fN2Onit_tavg-u-hxy-lnd": {
+            "cell_measures": "",
+            "cell_methods": "area: mean where land time: mean",
+            "comment": "",
+            "dimensions": [
+                "longitude",
+                "latitude",
+                "time"
+            ],
+            "long_name": "N2O emission from nitrification",
+            "modeling_realm": "land",
+            "out_name": "fN2Onit",
+            "positive": "",
+            "standard_name": "N2O emission from nitrification",
+            "units": "kg m-2 s-1"
+        },
+	"fN2Odenit_tavg-u-hxy-lnd": {
+            "cell_measures": "",
+            "cell_methods": "area: mean where land time: mean",
+            "comment": "",
+            "dimensions": [
+                "longitude",
+                "latitude",
+                "time"
+            ],
+            "long_name": "N2O emission from denitrification",
+            "modeling_realm": "land",
+            "out_name": "fN2Odenit",
+            "positive": "",
+            "standard_name": "N2O emission from denitrification",
+            "units": "kg m-2 s-1"
+        },
+	"evspsbl_tavg-u-hxy-lnd": {
+            "cell_measures": "",
+            "cell_methods": "area: mean where land time: mean",
+            "comment": "",
+            "dimensions": [
+                "longitude",
+                "latitude",
+                "time"
+            ],
+            "long_name": "Total Evapo-Transpiration",
+            "modeling_realm": "land",
+            "out_name": "evapotrans",
+            "positive": "",
+            "standard_name": "total evapo-transpiration",
+            "units": "kg m-2 s-1"
         }
 	
     }
