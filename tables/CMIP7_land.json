@@ -4462,7 +4462,7 @@
             "standard_name": "nitrification_rate",
             "units": "kg m-2 s-1"
         },
-	"fNnitri_tavg-u-hxy-lnd": {
+	"fNdenitri_tavg-u-hxy-lnd": {
             "cell_measures": "",
             "cell_methods": "area: mean where land time: mean",
             "comment": "",
@@ -4493,9 +4493,24 @@
             "positive": "",
             "standard_name": "soil_methane_flux",
             "units": "kg m-2 s-1"
+        },
+	"cVegVgt_tavg-hxy-multi": {
+            "cell_measures": "",
+            "cell_methods": "area: mean where land time: mean",
+            "comment": "",
+            "dimensions": [
+                "longitude",
+                "latitude",
+		"pft",
+                "time"
+            ],
+            "long_name": "Vegtype level Carbon in Vegetation",
+            "modeling_realm": "land",
+            "out_name": "cVegpft",
+            "positive": "",
+            "standard_name": "vegtype level carbon in vegetation",
+            "units": "kg m-2"
         }
-	
-
 	
     }
 }
