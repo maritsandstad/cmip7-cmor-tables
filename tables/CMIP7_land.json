@@ -504,7 +504,7 @@
             "standard_name": "Carbon in Soil above 1m",
             "units": "kg m-2"
         },
-	"cSoilBelow1m_tavg-hxy-lnd": {
+	"cSoilb_tavg-d100cm-hxy-lnd": {
             "cell_measures": "",
             "cell_methods": "area: mean where land time: mean",
             "comment": "",
@@ -4042,7 +4042,7 @@
             "standard_name": "CO2_emission_from_cveg_due_to_fire",
             "units": "kg m-2 s-1"
         },
-	"nOrgSoil_tavg-hxy-lnd": {
+	"nOrgSoil_tavg-u-hxy-lnd": {
             "cell_measures": "",
             "cell_methods": "area: mean where land time: mean",
             "comment": "",
@@ -4494,7 +4494,7 @@
             "standard_name": "soil_methane_flux",
             "units": "kg m-2 s-1"
         },
-	"cVegVgt_tavg-hxy-multi": {
+	"cVegVgt_tavg-u-hxy-multi": {
             "cell_measures": "",
             "cell_methods": "area: mean where land time: mean",
             "comment": "",
