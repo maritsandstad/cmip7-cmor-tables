@@ -3860,7 +3860,7 @@
             "out_name": "albedo",
             "positive": "",
             "standard_name": "gridcell_broadband_albedo",
-            "units": "W m-2"
+            "units": "%"
         },
 	"albedoVgt_tavg-u-hxy-multi": {
             "cell_measures": "",
@@ -3877,7 +3877,7 @@
             "out_name": "albedo",
             "positive": "",
             "standard_name": "gridcell_broadband_albedo",
-            "units": "W m-2"
+            "units": "%"
         },
 	"cWood_tavg-u-hxy-lnd": {
             "cell_measures": "",
@@ -4398,7 +4398,7 @@
             "standard_name": "soil_layer_respiration",
             "units": "kg m-2 s-1"
         },
-	"qsb_tavg-hxy-lnd": {
+	"qsb_tavg-u-hxy-lnd": {
             "cell_measures": "",
             "cell_methods": "area: mean where land time: mean",
             "comment": "",
@@ -4558,6 +4558,22 @@
             "positive": "",
             "standard_name": "total evapo-transpiration",
             "units": "kg m-2 s-1"
+        },
+	"hflsLat_tavg-u-hxy-lnd": {
+            "cell_measures": "",
+            "cell_methods": "area: mean where land time: mean",
+            "comment": "",
+            "dimensions": [
+                "longitude",
+                "latitude",
+                "time"
+            ],
+            "long_name": "Latent heat flux",
+            "modeling_realm": "land",
+            "out_name": "qle",
+            "positive": "",
+            "standard_name": "latent_heat_flux",
+            "units": "W m-2"
         }
 	
     }
