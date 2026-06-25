@@ -4140,7 +4140,7 @@
         },
 	"cFuelClass_tavg-u-hxy-multi": {
             "cell_measures": "",
-            "cell_methods": "area: mean where land time: mean",
+            "cell_methods": "area: time: mean where sector",
             "comment": "",
             "dimensions": [
                 "longitude",
@@ -4157,7 +4157,7 @@
         },
 	"fuelMoistureFuelClass_tavg-u-hxy-multi": {
             "cell_measures": "",
-            "cell_methods": "area: mean where land time: mean",
+            "cell_methods": "area: time: mean where sector",
             "comment": "",
             "dimensions": [
                 "longitude",
@@ -4496,7 +4496,7 @@
         },
 	"cVegVgt_tavg-u-hxy-multi": {
             "cell_measures": "",
-            "cell_methods": "area: mean where land time: mean",
+            "cell_methods": "area: time: mean where sector",
             "comment": "",
             "dimensions": [
                 "longitude",
