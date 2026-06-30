@@ -5,7 +5,7 @@
         "cmor_version": "3.13",
         "generic_levels": "",
         "int_missing_value": "-999",
-        "missing_value": "1e20",
+        "missing_value": "-99999",
         "ok_max_mean_abs": "",
         "ok_min_mean_abs": "",
         "positive": "",
@@ -1660,7 +1660,7 @@
             ],
             "long_name": "Gross Primary Production on Vegetation type as Carbon Mass Flux [kgC m-2 s-1]",
             "modeling_realm": "land",
-            "out_name": "gppVgt",
+            "out_name": "gpppft",
             "positive": "",
             "standard_name": "gross_primary_productivity_of_biomass_expressed_as_carbon",
             "units": "kg m-2 s-1"
@@ -1972,7 +1972,7 @@
             ],
             "long_name": "Leaf Area Index on Vegetation type",
             "modeling_realm": "land",
-            "out_name": "laiVgt",
+            "out_name": "laipft",
             "positive": "",
             "standard_name": "leaf_area_index",
             "units": "1"
@@ -2655,7 +2655,7 @@
             ],
             "long_name": "Net Primary Production on Vegetation type as Carbon Mass Flux [kgC m-2 s-1]",
             "modeling_realm": "land",
-            "out_name": "nppVgt",
+            "out_name": "npppft",
             "positive": "",
             "standard_name": "net_primary_productivity_of_biomass_expressed_as_carbon",
             "units": "kg m-2 s-1"
