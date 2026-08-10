@@ -2656,7 +2656,7 @@
             "long_name": "Net Primary Production on Vegetation type as Carbon Mass Flux [kgC m-2 s-1]",
             "modeling_realm": "land",
             "out_name": "npppft",
-            "positive": "",
+            "positive": "down",
             "standard_name": "net_primary_productivity_of_biomass_expressed_as_carbon",
             "units": "kg m-2 s-1"
         },
@@ -4575,6 +4575,22 @@
             "standard_name": "latent_heat_flux",
             "units": "W m-2"
         }
-	
+	"cOther_tavg-u-hxy-lnd": {
+            "cell_measures": "",
+            "cell_methods": "area: mean where land time: mean",
+            "comment": "",
+            "dimensions": [
+                "longitude",
+                "latitude",
+                "time"
+            ],
+            "long_name": "Other land carbon stocks",
+            "modeling_realm": "land",
+            "out_name": "cOther",
+            "positive": "",
+            "standard_name": "other_land_carbon_stocks",
+            "units": "kg m-2"
+        }
+
     }
 }
